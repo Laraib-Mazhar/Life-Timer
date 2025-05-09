@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version of HTML (HTML5) -->
+<html lang="en">
+<!-- Sets the language of the document to English -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Sets the character encoding to UTF-8 for full character support -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes the site responsive on all devices by setting the viewport width to the device width -->
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- Links an external stylesheet named styles.css for custom styling -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Loads Font Awesome icons library from CDN -->
+
+  <title>Life Timer</title>
+  <!-- Sets the title of the webpage that appears on the browser tab -->
+</head>
+
+<body>
+  <div class="bg">
+    <!-- Main background container -->
+
+    <div class="container" id="initialText">
+      <!-- Container that shows the prompt to enter the date of birth -->
+      <h1>Kindly enter your date of birth.</h1>
+    </div>
+
+    <div class="center">
+      <!-- Centered container for the output -->
+
+      <div class="container hide" id="afterDobBtnText">
+        <!-- This section becomes visible after DOB is entered -->
+        <h1>How Much life Journey Covered, Till Now.</h1>
+
+        <div class="time-container">
+          <!-- Container to display the calculated time components -->
+          <h2><div id="yearEl">0</div>Years</h2>
+          <!-- Displays years lived -->
+          <h2><div id="monthEl">0</div>Months</h2>
+          <!-- Displays months lived -->
+          <h2><div id="weekEl">0</div>Weeks</h2>
+          <!-- Displays weeks lived -->
+          <h2><div id="dayEl">0</div>Days</h2>
+          <!-- Displays days lived -->
+          <h2><div id="hourEl">0</div>Hours</h2>
+          <!-- Displays hours lived -->
+          <h2><div id="minuteEl">0</div>Minutes</h2>
+          <!-- Displays minutes lived -->
+          <h2><div id="secondEl">0</div>Seconds</h2>
+          <!-- Displays seconds lived -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="settings">
+      <!-- Settings section that contains the cog icon and DOB input -->
+      <i class="fa fa-cog fa-spin" id="setting-icon"></i>
+      <!-- Font Awesome spinning cog icon used to toggle DOB input visibility -->
+
+      <div class="setting-content hide" id="setting-content">
+        <!-- Hidden by default, this section contains the DOB input and button -->
+        <input type="date" id="dobInput">
+        <!-- Input field where user selects their date of birth -->
+
+        <button id="dobBtn">Add Date of Birth</button>
+        <!-- Button to confirm and set the DOB -->
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+  <!-- Loads external JavaScript file (index.js) for handling logic -->
+</body>
+</html>

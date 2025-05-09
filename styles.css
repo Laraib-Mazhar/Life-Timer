@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+/* Imports the 'Oswald' font family with various font weights from Google Fonts */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Resets default margin and padding for all elements and uses border-box model for consistent sizing */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* Applies the 'Oswald' font to the entire page */
+
+.bg {
+  background-image: url("mountain.jpg");
+  /* Sets the background image for the full-screen section */
+
+  height: 100vh;
+  /* Sets the background section height to full viewport height */
+
+  width: 100%;
+  /* Makes sure the background section covers full width */
+
+  background-size: cover;
+  /* Scales the image to completely cover the container without distortion */
+
+  background-position: center;
+  /* (Optional) Centers the background image — currently commented out */
+
+  background-repeat: no-repeat;
+  /* Prevents the background image from repeating */
+}
+
+.container {
+  text-align: center;
+  /* Centers the text inside the container */
+
+  padding-top: 5rem;
+  /* Adds top padding for spacing */
+}
+
+.container > h1 {
+  font-size: 3rem;
+  /* Sets the font size of heading inside the container */
+
+  margin-top: 120px;
+  /* Adds additional space above the heading */
+
+  text-shadow:
+    0 0 5px blue,
+    0 0 10px palegreen,
+    0 0 15px skyblue;
+}
+
+.settings {
+  position: absolute;
+  /* Positions the settings section absolutely within the nearest relative ancestor */
+
+  bottom: 30px;
+  right: 20px;
+  /* Places it near the bottom-right corner */
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* Aligns items horizontally with spacing between them */
+}
+
+.settings .fa-cog {
+  font-size: 3rem;
+  /* Sets the size of the gear (cog) icon */
+
+  color: black;
+  /* Sets icon color */
+}
+
+.setting-content {
+  display: flex;
+  /* Displays input and button side by side */
+
+  gap: 1rem;
+  /* Adds spacing between input and button */
+}
+
+.setting-content input {
+  padding: 0.5rem 1rem;
+  /* Adds inner spacing to the date input */
+
+  font-size: 1rem;
+  /* Sets font size for date input */
+}
+
+.setting-content button {
+  padding: 0.5rem 1rem;
+  /* Adds inner spacing to the button */
+
+  background-color: black;
+  /* Sets button background color */
+
+  border: none;
+  /* Removes default border */
+
+  border-radius: 10px;
+  /* Rounds the corners of the button */
+
+  font-size: 1rem;
+  /* Sets font size of the button text */
+
+  color: white;
+  /* Sets button text color */
+}
+
+.hide {
+  display: none;
+}
+/* Utility class to hide elements from view */
+
+.time-container {
+  margin-top: 1rem;
+  /* Adds space above the container */
+
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  /* Arranges child elements in a row, evenly spaced and vertically centered */
+
+  text-shadow:
+    0 0 5px blue,
+    0 0 10px palegreen,
+    0 0 15px skyblue;
+}
+
+.time-container h2 {
+  text-align: center;
+  /* Centers each heading */
+
+  line-height: 50px;
+  /* Adds vertical space between lines */
+
+  font-size: 2rem;
+  /* Sets font size of the time labels (e.g., "Years") */
+}
+
+.time-container div {
+  font-size: 3rem;
+  /* Enlarges the numeric values */
+
+  color: white;
+  /* Makes the time numbers white for visibility */
+}
